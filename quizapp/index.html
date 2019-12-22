@@ -15,11 +15,15 @@
 <body>
     <main>
         <header role="banner" class="header">
-            <section>
-                <a href="index.html">
-                    <img class="" src="images/top.png" alt="alt" />
-                </a>
-            </section>
+            <div class="header">
+                <h1>Fashion Designers Quiz</h1>
+
+                <section>
+                    <a href="index.html">
+                        <img class="" src="images/" alt="alt" />
+                    </a>
+                </section>
+            </div>
             <section>
                 <ul>
                     <li class="scoreCard">Question
@@ -38,14 +42,13 @@
                 <img src="images/sketch.jpg" alt="" class="">
                 <button type="button" class="startButton">Start</button>
             </section>
-            <section class="question box RightAnswer"></section>
-            <section class="question box WrongAnswer"></section>
-            <section class="question box FinalAnswer"></section>
+            <section class="questionBox someAnswer boxOfQuestion"></section>
+            <section class="question box responseAnswer boxOfQuestion"></section>
+            <section class="question box finalAnswer boxOfQuestion"></section>
 
         </section>
 
     </main>
-    <!-- <footer></footer> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="store.js"></script>
     <script src="index.js"></script>

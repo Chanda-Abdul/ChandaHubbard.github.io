@@ -8,7 +8,7 @@ const STORE = {
                 "Gabrielle Coco Chanel",
                 "Kate Spade"
             ],
-            answer "Gabrielle Coco Chanel"
+            answer: "Gabrielle Coco Chanel"
         },
         //2
         {
@@ -19,7 +19,7 @@ const STORE = {
                 "Carolina Herrera",
                 "Diane Von Furstenberg"
             ],
-            answer "Diane Von Furstenberg"
+            answer: "Diane Von Furstenberg"
         },
         //3
         {
@@ -30,7 +30,7 @@ const STORE = {
                 "Club Monaco",
                 "Dolce & Gabanna"
             ],
-            answer "Burberry"
+            answer: "Burberry"
         },
         //4
         {
@@ -41,7 +41,7 @@ const STORE = {
                 "Christian Louboutin",
                 "Dior"
             ],
-            answer "Christian Louboutin"
+            answer: "Christian Louboutin"
         },
         //5
         {
@@ -52,7 +52,7 @@ const STORE = {
                 "Celine",
                 "Gucci"
             ],
-            answer "Hermes"
+            answer: "Hermes"
         },
         //6
         {
@@ -63,7 +63,7 @@ const STORE = {
                 "Marc Jacobs",
                 "Dries Van Noten"
             ],
-            answer "Prada"
+            answer: "Prada"
         },
         //7
         {
@@ -74,7 +74,7 @@ const STORE = {
                 "Karl Lagerfeld",
                 "Ralph Lauren"
             ],
-            answer "Ralph Lauren"
+            answer: "Ralph Lauren"
         },
         //8
         {
@@ -85,7 +85,7 @@ const STORE = {
                 "Lacoste",
                 "Fendi"
             ],
-            answer "Lacoste"
+            answer: "Lacoste"
         },
         //9
         {
