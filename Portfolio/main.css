@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    line-height: 1.25;
+}
+
+nav,
+footer {
+    padding: 1% 0;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* z-index: 10; */
+    text-align: left;
+    padding: 10px;
+    font-size: 30px;
+}
+
+header {
+    padding: 12% 0;
+}
+
+section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: lightgray;
+}
+
+img {
+    width: 200px;
+}
+
+section:nth-child(even) {
+    background-color: grey;
+}
+
+.social {
+    width: 30px;
+}
