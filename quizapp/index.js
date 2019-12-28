@@ -1,188 +1,150 @@
-//creates and stores variables for the quiz score and question number information
-let currentScore = 0;
-let currentQuestion = 0;
-
-//generate each quiz questions
-function generateQuestion() {
-    if (currentQuestion < STORE.length) {
-        return createQuestion(currentQuestion);
-    } else {
-        $('.someAnswerBox').hide();
-        finalScore();
-        $('.currentQuestion').text(10);
-    }
-    // let question = STORE.questions[STORE.currentQuestion];
-    // updateScoreAndQuestion();
-    // const questionHTML = $(`<div><form id="js-questions" class ="question-form"><fieldset><div class="row question"><div class="col-12"><legend>${question.question}</legend></div></div><div class="row options"><div class="col-12"><div class="js-options"></div></div></div><div class="row"><div class="col-12"><button type="submit" id="answer" tabindex="5">Submit</button><button type="button" id="next-question" tabindex="6"> Next>></button></div></div></fieldset></form></div>`);
-    // $("main").html(questionHTML);
-    // updateOptions();
-    // $("#next-question").hide();
-}
-//increments the currentScore variable by one and updates the 'score' number text in the quiz view
-function updateScore() {
-    currentScore++;
-    $('.currentScore ').text(currentScore);
-}
-//increments the currentQuestions variable by one and updates the 'question' number text in the quiz view
-function updateQuestion() {
-    currentQuestion++;
-    $('.currentQuestion').text(currentQuestion + 1);
-}
-
-
-//restarts the quiz and resets the text value of currentScore and currentQuestion to 0, and updates thier respective text in quiz view
-function resetQuiz() {
-    currentScore = 0;
-    currentQuestion = 0;
-    $('.currentScore').text(0);
-    $('.currentQuestion').text(0);
-
-}
-
-
-//begins the quiz when a user clicks on the 'start' button
+/* when a user clicks on start quiz button */
 function startQuiz() {
-    $('.boxOfQuestion').hide();
-    $('.startQuiz').on('click', '.startButton', function(event) {
-        $('.startQuiz').hide();
-        $('.currentQuestion').text(1);
-        $('.someAnswerBox').show();
-        $('.someAnswerBox').prepend(generateQuestion());
-    });
-
-}
-
-//runs the answer functions
-function submitAnswer() {
-    $('.backgroundBox').on('submit', function(event) {
-        event.preventDefault();
-        $('.boxOfQuestion').hide();
-        $('.response').show();
-        let selected = $('input:checked');
-        let answer = selected.val();
-        let correct = STORE[currentQuestion].correctAnswer;
-        if (answer === correct) {
-            correctAnswer();
-        } else {
-            wrongAnswer();
-        }
+    $('#startButton').on('click', function(event) {
+        generateQuestion();
+        $('.altBox').hide();
+        $('.introQuiz').on('click', '.startButton', function(event) {
+            $('.introQuiz').hide();
+            questionNumber++;
+            $('.questionBox').show();
+            $('.questionBox').prepend(generateQuestion());
+        });
     });
 }
 
-//html template to create question form
-function createQuestion(questionIndex) {
-    let formMake = $(`<form>
-<fieldset>
-<legend class="questionText">${STORE[questionIndex].question}</legend>
-</fieldset>
-</form>`)
-
-    let fieldSelector = $(formMaker).find('fieldset');
-
-    STORE[questionIndex].answers.forEach(function(answerValue, anwserIndex) {
-        $(`<label class="scoreCard" for="${answerIndex}"><input class="radio" type="radio" id="${answerIndex}" value="${answerValue}" name="answer" required>
-    <span>${answerValue}</span>
-    </label>`).appendTo(fieldSelector);
-    });
-    $(`<button type="submit" class="submitButton button">Submit</button>`).appendTo(fieldSelector);
-    return formMaker;
-}
-//allows user to submit a selected answer and checks it against the correct answer
-
-//feedback results if answer is correct
-function correctAnwser() {
-    $('.response').html(
-        `<h3>Your answer is correct!</h3>
-        <img src="images/correct.jpg" alt="correct" class="images" width="200px">
-        <p class="sscoreCard">You're a smart one!</p>
-        <button type="button" class="nextButton button">Next</button>`
-    );
-    updateScore();
+/* Displays question number and score obtained */
+function updateQuestionScore() {
+    const html = $(`<ul>
+        <li id="js-answered">Question ${STORE.currentQuestion + 1}  of ${STORE.questions.length}</li>
+        <li id="js-score">Score ${STORE.currentScore} points </li>
+      </ul>`);
+    $(".current-question-score").html(html);
 }
 
-//feedback if answer is incorrect
-function wrongAnswer() {
-    $('.response').html(
-        `<h3>That's the wrong answer...</h3>
-        <img src="images/correct.jpg" alt="correct" class="images" width="200px">
-        <p class="scoreCard">It's actually:</p>
-        <p class="scoreCard">${STORE[currentQuestion].correctAnswer}</p>
-        <button type="button" class="nextButton button">Next</button>`
-    );
-}
-
-// function updateScoreAndQuestion() {
-
-// }
-
-
-
-
-//generates the next question
-function nextQuestion() {
-    $('.backgroundBox').on('click', '.nextButton', function(event) {
-        $('.boxOfQuestion').hide();
-        $('.someAnswerBox').show();
-        updateCurrentQuestion();
-        $('.someAnswerBox form').replaceWith(generateQuestion());
-    });
-
-}
-//determines final score and feedback at the end of the quiz
-function finalScore() {
-    $('.final').show();
-
-    const great = [
-        'Good job!',
-        'images/win.jpg',
-        'cheering',
-        'You sure know your fashion designers!',
-    ];
-    const good = [
-        'Good, not great.',
-        'images/win.jpg',
-        'something else',
-        'You should study your fashion designers',
-    ];
-    const bad = [
-        'You dont know fashion',
-        'images/win.jpg',
-        'something else',
-        'You should study your fashion designers',
-    ];
-    if (currentScore >= 7) {
-        array = great;
-    } else if (currentScore < 7 && currentScore >= 4) {
-        array = good;
-    } else {
-        array = bad;
+/* Displays the options for the current question */
+function updateOptions() {
+    let question = STORE.questions[STORE.currentQuestion];
+    for (let i = 0; i < question.options.length; i++) {
+        $('.js-options').append(`<input type="radio" name="options" id="option${i + 1}" tabindex="${i + 1}" value="${question.options[i]}">
+          <label for="options${i +1}">
+              ${question.options[i]}
+          </label>
+          <br>
+          <span id="js-r${i + 1}"></span>`);
     }
-    return $('.final').html(`<h3>${array[0]}</h3>
-    <img src="${array[1]}" alt="${array[2]}" class="images">
-    <h3>Your score is ${currentScore } /10</h3>
-    <p class="scoreCard">${array[3]}</p>
-    <button type="submit" class="restartButton button">Restart</button>`);
 }
 
-//resarts the quiz
-function restartQuiz() {
-    $('.backgroundBox').on('click', '.resartButton', function(event) {
-        event.preventDefault();
-        resetStats();
-        $('.boxOfQuestion').hide();
-        $('.startQuiz').show();
+/*displays the question*/
+function generateQuestion() {
+    let question = STORE.questions[STORE.currentQuestion];
+    updateQuestionScore();
+    const questionHtml = $(`
+    <div>
+      <form id="js-questions" class="question-form">
+        <fieldset>
+          <div class="quizBox">
+                  <div class="theQuizBox">
+              <legend> ${question.question}</legend>
+            </div>
+          </div>
+          <div class="quizBox">
+                  <div class="theQuizBox">
+              <div class="js-options"> </div>
+          </div>
+        </div>
+      
+  
+        <div class="quizBox">
+                  <div class="theQuizBox">
+            <button type = "submit" id="answer" tabindex="5">Submit</button>
+            <button type = "button" id="next-question" tabindex="6"> Next >></button>
+          </div>
+        </div>
+      </fieldset>
+      </form>
+    </div>`);
+    $("main").html(questionHtml);
+    updateOptions();
+    $("#next-question").hide();
+}
+
+/* displays results and restart quiz button */
+function displayResults() {
+    let resultHtml = $(
+        `<div class="results">
+        <form id="js-restart-quiz">
+          <fieldset>
+            <div class="quizBox">
+                  <div class="theQuizBox">
+                <legend>Your score is ${STORE.currentScore} points out of ${STORE.questions.length} points </br><img src="images/milanrunway.jpg"  alt="fashion police" width="350"></legend>
+              </div>
+            </div>
+          
+           <div class="quizBox">
+                  <div class="theQuizBox">
+                <button type="button" id="restart"> Restart Quiz </button>
+              </div>
+            </div>
+          </fieldset>
+      </form>
+      </div>`);
+    STORE.currentQuestion = 0;
+    STORE.currentScore = 0;
+    $("main").html(resultHtml);
+    // resetStats();
+}
+
+/* checks whether it reached the end of questions list */
+function moveAlong() {
+    $('body').on('click', '#next-question', (event) => {
+        STORE.currentQuestion === STORE.questions.length ? displayResults() : generateQuestion();
     });
 }
 
-//runs the functions
-function runQuiz() {
-    startQuiz();
-    generateQuestion();
-    submitAnswer();
-    nextQuestion();
-    restartQuiz();
 
+/*checks whether the chosen option is right or wrong and displays respective message*/
+function handleQuestionResponse() {
 
+    $('body').on("submit", '#js-questions', function(event) {
+        event.preventDefault();
+        let currentQues = STORE.questions[STORE.currentQuestion];
+        let selectedOption = $("input[name=options]:checked").val();
+        if (!selectedOption) {
+            alert("Choose an option");
+            return;
+        }
+        //this is not working?
+        let id_num = currentQues.options.findIndex(i => i === selectedOption);
+        let id = "#js-r" + ++id_num;
+        $('span').removeClass("right-answer wrong-answer");
+        if (selectedOption === currentQues.answer) {
+            STORE.currentScore++;
+            $('.js-options').append(`<br/><img src="images/toomuchfashion.jpg" alt="too much fashion" width="250" height="125"><br/><br/>You got it right!<br/> `);
+            $(`${id}`).addClass("right-answer");
+        } else {
+            $('.js-options').append(`<br/>You got it wrong <br/> Call the Fashion police!<br/><br/><img src="images/fashionpolice.jpg" alt="fashion police" width="250"> <br/><br/>The answer is ${currentQues.answer}<br/>`);
+            $(`${id}`).addClass("wrong-answer");
+        }
+
+        STORE.currentQuestion++;
+        $("#js-score").text(`Score: ${STORE.currentScore} points`);
+        $('#answer').hide();
+        $("input[type=radio]").attr('disabled', true);
+        $('#next-question').show();
+    });
 }
 
-$(runQuiz);
+function restartQuiz() {
+    $('body').on('click', '#restart', (event) => {
+        generateQuestion();
+    });
+}
+
+function handleQuizApp() {
+    startQuiz();
+    moveAlong();
+    handleQuestionResponse();
+    restartQuiz();
+}
+
+$(handleQuizApp);

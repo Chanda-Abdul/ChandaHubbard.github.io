@@ -7,48 +7,53 @@
     <meta name="description" content="Fashion Designer Quiz">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <title>Fashion Designer Quiz</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <main>
-        <header role="banner" class="header">
-            <div class="header">
-                <h1>Fashion Designers Quiz</h1>
-
-                <section>
-                    <a href="index.html">
-                        <img class="" src="images/" alt="alt" />
-                    </a>
-                </section>
-            </div>
-            <section>
-                <ul>
-                    <li class="scoreCard">Question
-                        <span class="questionNumber">0</span> of 10
-                    </li>
-                    <li class="scoreCard"> Score<span class="scoreNumber"> 0</span> points
-
-                    </li>
-                </ul>
+    <header>
+        <section class="headerBox question">
+            <img src="images/fashionheader.jpg" class="fashionHeader" alt="fashion header" width="250">
+            <section class="theQuizBox">
+                <br/>
+                <h1>Fashion Designer Quiz
+                </h1>
+                <div class="current-question-score">
+                </div>
             </section>
-        </header>
-
-        <section role="background" class="backgroundImage">
-            <section class="startQuiz box">
-                <h1>How much do you know about Fashion Designers</h1>
-                <img src="images/sketch.jpg" alt="" class="">
-                <button type="button" class="startButton">Start</button>
-            </section>
-            <section class="questionBox someAnswer boxOfQuestion"></section>
-            <section class="question box responseAnswer boxOfQuestion"></section>
-            <section class="question box finalAnswer boxOfQuestion"></section>
-
         </section>
+    </header>
+    <main>
+        <fieldset>
+            <div class="quizBox">
+                <div class="theQuizBox">
+                    <legend class="headerQuestion">How much do you really know about Fashion Designers?<br/>
+                        <br/>
+                        <legend>
+                            <p>This is a quiz to test your knowledge...</p>
+                </div>
+            </div>
+            <div class="quizBox">
+                <div class="theQuizBox">
+                    <button type="button" id="startButton">Start Quiz</button>
+                </div>
+            </div>
 
+        </fieldset>
+
+        <section class="questionBox box altBox">
+        </section>
+        <section class="response box altBox"></section>
+        <section class="final box altBox"></section>
+        </section>
+        </section>
+        </div>
     </main>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="store.js"></script>
     <script src="index.js"></script>
