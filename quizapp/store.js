@@ -1,14 +1,14 @@
 const STORE = {
     questions: [ //1
         {
-            question: "Which fashion designer is credited with introducing the”Little Black Dress” or “LBD”?",
+            question: "Which fashion designer is credited with introducing the “Little Black Dress” or “LBD”?",
             options: [
                 "Vera Wang",
                 "Yves Saint Laurent",
-                "Gabrielle Coco Chanel",
+                "Gabrielle “Coco” Chanel",
                 "Kate Spade"
             ],
-            answer: "Gabrielle Coco Chanel"
+            answer: "Gabrielle “Coco” Chanel"
         },
         //2
         {
@@ -34,7 +34,7 @@ const STORE = {
         },
         //4
         {
-            question: "Which French shoe designer is known for his eye catching red-bottom shoes, and is a leader in the trend toward hgher heel heights?",
+            question: "Which French shoe designer is known for his eye catching red-bottom shoes, and is a leader in the trend toward higher heel heights?",
             options: [
                 "Manolo Blahnik",
                 "Tom Ford",
@@ -45,7 +45,7 @@ const STORE = {
         },
         //5
         {
-            question: "Ladies love thier bags, which brand is responsible for creating the most wanted Birkin bag, named after British actress Jane Birkin?",
+            question: "Ladies love thier bags, which brand is responsible for creating the most wanted Birkin” bag, named after British actress Jane Birkin?",
             options: [
                 "Louis Vuitton",
                 "Hermes",
@@ -78,7 +78,7 @@ const STORE = {
         },
         //8
         {
-            question: "This brands' crocodile loga was created in 1933, and was the first ever designer logo.",
+            question: "This brands' crocodile logo was created in 1933, and was the first ever designer logo.",
             options: [
                 "Givenchy",
                 "Balenciaga",
@@ -111,5 +111,5 @@ const STORE = {
         }
     ],
     currentQuestion: 0,
-    score: 0
+    currentScore: 0
 };
