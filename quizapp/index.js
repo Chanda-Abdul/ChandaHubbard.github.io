@@ -1,3 +1,8 @@
+//to reference score and question variable
+let score = STORE.currentScore;
+let questionNumber = STORE.currentQuestion;
+
+
 /* when a user clicks on start quiz button */
 function startQuiz() {
   $('#startButton').on('click', function(event){
