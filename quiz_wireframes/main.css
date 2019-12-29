@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-size: 15px;
+    color: white;
+}
+
+.current-question-score {
+    text-align: right;
+    font-size: .9em;
+}
+
+.headerQuestion {
+    test-align: center;
+}
+
+fieldset {
+    text-align: center;
+}
+
+.headerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0.5em;
+    background-color: white;
+    color: white;
+    line-height: 1.5;
+    border-radius: 2%;
+}
+
+h1 {
+    margin: 0.5em;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+p {
+    font-size: .9em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    padding: 0.5em;
+    background-color: rgb(168, 91, 149);
+    line-height: 1.5;
+    border-radius: 2%;
+}
+
+.js-options {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.theQuizBox {
+    padding: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#startButton,
+#answer,
+#next-question,
+#restart {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: .5em;
+    color: black;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .fashionHeader {
+        height: 15em;
+        width: 30em;
+    }
+}
