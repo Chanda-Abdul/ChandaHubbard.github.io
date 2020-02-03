@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dinner and a Movie
+        <link rel="stylesheet" href="main.css">
+    </title>
+</head>
+<body>
+
+    <header>
+		<section class="headerBox">
+			<!-- <img src="# alt="" width=""/> -->
+			<h1>Dinner and a Movie</h1>
+		</section>
+	</header>
+<div class="introBox box altBox">
+    <h2>
+        Are you ready for a fun night in?
+    </h2>
+    <button type="button" id="startAppButton">Let's Go!</button>
+
+</div>
+    
+    <div class="dinnerBox box altBox">
+        <form id="js-dinner-form">
+<label for="search-term-dinner" id="search-term-dinner"> 
+    Where should we deliver your food?
+</label>
+<br/>
+<br/>
+<input type="text" name="dinner-search-term" id="js-search-term-dinner" required placeholder="i.e. 1600 Main Street, Oakland, CA">
+<br/>
+<br/>
+<input type="radio" name="deliveryOrPickup" value="delivery" id="js-delivery-or-pickup" > Delivery<br>
+<input type="radio" name="deliveryOrPickup" value="pickup" id="js-delivery-or-pickup"> Pickup<br>
+<input type="radio" name="deliveryOrPickup" value="both" id="js-delivery-or-pickup"> Both<br><br/>
+    <input type="submit" value="Find a Restuaurant!" id="findRestaurant">
+      </form>
+
+          <p id="js-error-message" class="error-message"></p>
+      <section id="dinnerResults">
+        <ul id="dinner-results-list">
+        </ul>
+      </section>
+    </div>
+
+    <div class="movieBox box altBox">
+		<h2>Great!</h2>
+		<form id="js-movie-form">
+			<label for="search-term-movie">Now, what movie do you like and want to see similar movie recommendations for?</label><br/><br/>
+      <input type="text" name="search-term" id="js-search-term-movie" required placeholder="i.e. When Harry Met Sally"><br/><br/>
+      <input type="submit" value="Find a Movie!">
+        </form>
+
+	        <p id="js-error-message" class="error-message"></p>
+        <section id="movieResults" class="hidden">
+          <!--  -->
+          <ul id="movie-results-list">
+          </ul>
+        </section>
+        </div>
+        <div class="resultsBox box altBox">
+            <h2>Let's start the show...</h2>
+            <p>The perfect night in starts with ordering in from</p>
+            <section id="dinnerResults" class="hidden">
+                <ul id="dinner-results-list">
+                </ul>
+            </section>
+            <p>and watching one of these great movies...</p>
+            <section id="movieResults" class="hidden">
+                <ul id="movie-results-list">
+                </ul>
+            </section>
+        </div>
+        <div class="restartBox box altBox">
+            <p>
+                Want more recommendations?
+<br/>
+<br/> Let's start over
+            </p>
+            <button type="button" id="restartAppButton">I want more!</button>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script> 
+</body>
+</html>
