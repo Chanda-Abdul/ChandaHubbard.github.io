@@ -3,8 +3,16 @@
 const dinnerApiKey = 'c78d6bb5335bd92c';
 const dinnerSearchURL = 'https://cors-anywhere.herokuapp.com/https://eatstreet.com/publicapi/v1/restaurant/search';
 
+let responseJsonResultsDinner = []
+
+let currentDinnerIndex = Math.floor(Math.random() * 10)
+
 const movieApiKey = '354423-Dinneran-7CSLUZNY';
 const movieSearchURL = 'https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar';
+
+let responseJsonResultsMovie = []
+
+let currentMovieIndex = Math.floor(Math.random() * 10)
 
 function formatQueryParams(params) {
     const queryItems = Object.keys(params)
@@ -21,7 +29,6 @@ $('#startAppButton').on('click', function(event)
 {
 generateDinner();
 })
-    //event.preventDefault();
 }
 
 function generateDinner () {
@@ -57,38 +64,53 @@ function getDinner(streetAddress, deliveryOrPickup) {
         }
         throw new Error(response.statusText);
       })
-      .then(responseJson => displayDinnerResults(responseJson))
+      // .then(responseJson => displayDinnerResults(responseJson))
+      .then(responseJson => storeDinnerResults(responseJson))
       .catch(err => {
         $('#js-error-message').text(`Something went wrong: ${err.message}`);
       });
   }
 
-  function displayDinnerResults(responseJson) {
+  function storeDinnerResults(responseJson) {
+    //assigns them to your responseJsonResults array
+//.push
+      //  var dinnerJsonReponseRestaurantUrl = responseJson.restaurants[0].url;
+      // const dinnerJsonReponseRestaurantName = responseJson.restaurants[0].name;
+      // const dinnerJsonReponseRestaurantLogo = responseJson.restaurants[0].logoUrl;
+      // const dinnerJsonReponseRestaurantAddress = responseJson.restaurants[0].streetAddress;
+      // const dinnerJsonReponseRestaurantCity = responseJson.restaurants[0].city;
+      // const dinnerJsonReponseRestaurantState = responseJson.restaurants[0].state;
+      // const dinnerJsonReponseRestaurantZip = responseJson.restaurants[0].zip;
+      // const dinnerJsonReponseRestaurantPhone = responseJson.restaurants[0].phone;
+
+      responseJsonResultsDinner = responseJson
+   displayDinnerResults();
+  };
+
+  function displayDinnerResults() {
     // if there are previous results, remove them
     $('#dinnerResults').empty();
     
     $('#dinnerResults').append(
-        `<h2>Now let's find a movie to watch!</h2><button type="button" id="goToMovieButton">Find a movie</button><br/><br/><h3>Here are a few restaurants that you might want to order from...</h3>
-        `)
-    for (let i = 0; i < 5 ; i++) {
+        `<h2>Now let's find a movie to watch!</h2><button type="button" id="goToMovieButton">Find a movie</button><br/><br/>`)
+    for (let i = 0; i < 10 ; i++) {
       // iterate through the items array
-      
-      $('#dinnerResults').append(
-        `<li><h2><a href="${responseJson.restaurants[i].url}" target="_blank">${responseJson.restaurants[i].name}</a></h2>
-        <p><img src="${responseJson.restaurants[i].logoUrl}" alt="restaurant logo"></p>
-       <p>${responseJson.restaurants[i].streetAddress}<br/>
-       ${responseJson.restaurants[i].city}, ${responseJson.restaurants[i].state}, ${responseJson.restaurants[i].zip}<br/>
-       ${responseJson.restaurants[i].phone}<br/><br/>
-       </p></li>`
-      )
-    //   var myJSONObject = responseJson.restaurants[0].url;
-    //   const dinnerJsonReponseRestaurantName = responseJson.restaurants[0].name;
-    //   const dinnerJsonReponseRestaurantLogo = responseJson.restaurants[0].logoUrl;
-    //   const dinnerJsonReponseRestaurantAddress = responseJson.restaurants[0].streetAddress;
-    //   const dinnerJsonReponseRestaurantCity = responseJson.restaurants[0].city;
-    //   const dinnerJsonReponseRestaurantState = responseJson.restaurants[0].state;
-    //   const dinnerJsonReponseRestaurantZip = responseJson.restaurants[0].zip;
-    //   const dinnerJsonReponseRestaurantPhone = responseJson.restaurants[0].phone;
+      // console.log(
+      // // $('#dinnerResults').append(
+      // //   `<li><h2><a href="${responseJsonResultsDinner.restaurants[currentIndex].url}" target="_blank">${responseJsonResultsDinner.restaurants[currentIndex].name}</a></h2>
+      // //   <p><img src="${responseJsonResultsDinner.restaurants[currentIndex].logoUrl}" alt="restaurant logo"></p>
+      // //  <p>${responseJsonResultsDinner.restaurants[currentIndex].streetAddress}<br/>
+      // //  ${responseJsonResultsDinner.restaurants[currentIndex].city}, ${responseJsonResultsDinner.restaurants[currentIndex].state}, ${responseJsonResultsDinner.restaurants[currentIndex].zip}<br/>
+      // //  ${responseJsonResultsDinner.restaurants[currentIndex].phone}<br/><br/>
+      // //  </p></li>`
+      //   `<li><h2><a href="${responseJsonResultsDinner.restaurants[i].url}" target="_blank">${responseJsonResultsDinner.restaurants[i].name}</a></h2>
+      //   <p><img src="${responseJsonResultsDinner.restaurants[i].logoUrl}" alt="restaurant logo"></p>
+      //  <p>${responseJsonResultsDinner.restaurants[i].streetAddress}<br/>
+      //  ${responseJsonResultsDinner.restaurants[i].city}, ${responseJsonResultsDinner.restaurants[i].state}, ${responseJsonResultsDinner.restaurants[i].zip}<br/>
+      //  ${responseJsonResultsDinner.restaurants[i].phone}<br/><br/>
+      //  </p></li>`
+      // )
+   
 
       $('form').hide();
     };
@@ -111,7 +133,7 @@ function getDinner(streetAddress, deliveryOrPickup) {
     $('form').submit(event => {
         event.preventDefault();
         const searchTerm = $('#js-search-term-movie').val();
-        const maxResults = 5;
+        const maxResults = 10;
         getMovies(searchTerm, maxResults);
       });
   }
@@ -137,26 +159,36 @@ function getDinner(streetAddress, deliveryOrPickup) {
         }
         throw new Error(response.statusText);
       })
-      .then(responseJson => displayMovieResults(responseJson))
+      //.then(responseJson => displayMovieResults(responseJson))
+      .then(responseJson => storeMovieResults(responseJson))
       .catch(err => {
         $('#js-error-message').text(`Something went wrong: ${err.message}`);
       });
   }
 
-  function displayMovieResults(responseJson) {
+function storeMovieResults(responseJson) {
+    
+      responseJsonResultsMovie = responseJson
+   displayMovieResults();
+  };
+
+
+  function displayMovieResults() {
     // if there are previous results, remove them
     $('#movie-results-list').empty();
     $('h2').hide();
+    $('form').hide();
+
     $('#movie-results-list').append(
-        `<h1>Now let's view the perfect dinner and movie for you tonight!</h1><button type="button" id="goToResultsButton">View my Dinner & Movie Pairing</button><br/><br/><h3>Here are a few movies that you might want to watch tonight...</h3>`)
-        for (let i = 0; i < responseJson.Similar.Results.length; i++) {
+        `<h1>Now let's view the perfect dinner and movie for you tonight!</h1><button type="button" id="goToResultsButton">View my Dinner & Movie Pairing</button><br/><br/>`)
+        for (let i = 0; i < responseJsonResultsMovie.Similar.Results.length; i++) {
       // iterate through the items array
       
-      $('#movie-results-list').append(
-        `<li><h3><a href="${responseJson.Similar.Results[i].wUrl}" target="_blank">${responseJson.Similar.Results[i].Name}</a></h3>
-        <iframe width="560" height="315" src="${responseJson.Similar.Results[i].yUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>${responseJson.Similar.Results[i].wTeaser}</p></li>`
-      )
-      $('form').hide();
+      // $('#movie-results-list').append(
+      //   `<li><h3><a href="${responseJsonResultsMovie.Similar.Results[i].wUrl}" target="_blank">${responseJsonResultsMovie.Similar.Results[i].Name}</a></h3>
+      //   <iframe width="560" height="315" src="${responseJsonResultsMovie.Similar.Results[i].yUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>${responseJsonResultsMovie.Similar.Results[i].wTeaser}</p></li>`
+      // )
+      
     };
     $('#goToResultsButton').on('click', function(event)
     {
@@ -164,7 +196,7 @@ function getDinner(streetAddress, deliveryOrPickup) {
     })
   };
 
-  function generateMovieDinnerPair() {
+  function generateMovieDinnerPair(responseJson) {
     $('.headerBox').hide();
         $('.introBox').hide();
         $('.dinnerBox').hide();
@@ -172,17 +204,38 @@ function getDinner(streetAddress, deliveryOrPickup) {
         $('form').show();
         $('h2').show();
         $('.resultsBox').show();
-        //displayMovieForm();
-        //getDinner();
-        $('#dinner-results-list-final').getDinner(streetAddress, deliveryOrPickup).append(`<li><h2><a href="${responseJson.restaurants[0].url}" target="_blank">${responseJson.restaurants[0].name}</a></h2>
-        <p><img src="${responseJson.restaurants[0].logoUrl}" alt="restaurant logo"></p>
-       <p>${responseJson.restaurants[0].streetAddress}<br/>
-       ${responseJson.restaurants[0].city}, ${responseJson.restaurants[0].state}, ${responseJson.restaurants[0].zip}<br/>
-       ${responseJson.restaurants[0].phone}<br/><br/>
-       </p></li>`)
+        // const currentRest = responseJsonResultsDinner.restaurants[currentIndex];
+        // const streetAddress = $('#js-search-term-dinner').val();
+        // const deliveryOrPickup = $("input[name='deliveryOrPickup']:checked").val();
+        // getDinner(streetAddress, deliveryOrPickup);
+        $('#dinner-results-list-final').append(
+      //     `<li><h2><a href="${responseJsonResultsDinner.restaurants[0].url}" target="_blank">${responseJsonResultsDinner.restaurants[0].name}</a></h2>
+      //   <p><img src="${responseJsonResultsDinner.restaurants[0].logoUrl}" alt="restaurant logo"></p>
+      //  <p>${responseJsonResultsDinner.restaurants[0].streetAddress}<br/>
+      //  ${responseJsonResultsDinner.restaurants[0].city}, ${responseJsonResultsDinner.restaurants[0].state}, ${responseJsonResultsDinner.restaurants[0].zip}<br/>
+      //  ${responseJsonResultsDinner.restaurants[0].phone}<br/><br/>
+      //  </p></li>`
+       `<li><h2><a href="${responseJsonResultsDinner.restaurants[currentDinnerIndex].url}" target="_blank">${responseJsonResultsDinner.restaurants[currentDinnerIndex].name}</a></h2>
+        <p><img src="${responseJsonResultsDinner.restaurants[currentDinnerIndex].logoUrl}" alt="restaurant logo"></p>
+       <p>${responseJsonResultsDinner.restaurants[currentDinnerIndex].streetAddress}<br/>
+       ${responseJsonResultsDinner.restaurants[currentDinnerIndex].city}, ${responseJsonResultsDinner.restaurants[currentDinnerIndex].state}, ${responseJsonResultsDinner.restaurants[currentDinnerIndex].zip}<br/>
+       ${responseJsonResultsDinner.restaurants[currentDinnerIndex].phone}<br/><br/>
+       </p></li>`
+       )
+// responseJsonResultsDinner.restaurants[Math.floor(Math.random() * responseJsonResultsDinner.restaurants.length)].url
+//        [Math.floor(Math.random() * responseJsonResultsDinner.restaurants.length)];
+
+
+      //     `<li><h2><a href="${responseJson.restaurants[0].url}" target="_blank">${responseJson.restaurants[0].name}</a></h2>
+      //   <p><img src="${responseJson.restaurants[0].logoUrl}" alt="restaurant logo"></p>
+      //  <p>${responseJson.restaurants[0].streetAddress}<br/>
+      //  ${responseJson.restaurants[0].city}, ${responseJson.restaurants[0].state}, ${responseJson.restaurants[0].zip}<br/>
+      //  ${responseJson.restaurants[0].phone}<br/><br/>
+      //  </p></li>`
+      
        getMovies();
-        $('#movie-results-list-final').append(`li><h3><a href="${responseJson.Similar.Results[0].wUrl}" target="_blank">${responseJson.Similar.Results[0].Name}</a></h3>
-        <iframe width="560" height="315" src="${responseJson.Similar.Results[0].yUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>${responseJson.Similar.Results[0].wTeaser}</p></li>`)
+        $('#movie-results-list-final').append(`<li><h3><a href="${responseJsonResultsMovie.Similar.Results[currentMovieIndex].wUrl}" target="_blank">${responseJsonResultsMovie.Similar.Results[currentMovieIndex].Name}</a></h3>
+        <iframe width="560" height="315" src="${responseJsonResultsMovie.Similar.Results[currentMovieIndex].yUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>${responseJsonResultsMovie.Similar.Results[currentMovieIndex].wTeaser}</p></li>`)
   }
 
 
