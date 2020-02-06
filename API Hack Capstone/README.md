@@ -1,10 +1,12 @@
+# Dinner and a Movie API Hack Capstone
+
 
 <!-- # Dinner and a Movie API Hack Capstone
 <!-- The name of your app at the top of the file
 
 
 
-# Dinner and a Movie API Hack Capstone
+
 
 <!-- A community driven, book recommendation application. Users can create lists of their favorite books and have others recommended to them.
 A link to your live app
