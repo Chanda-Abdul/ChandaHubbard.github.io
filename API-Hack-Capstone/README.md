@@ -64,7 +64,13 @@ Responsive web app that helps users decide where to order dinner and which movie
 
 ## Final version & User Flows
 
-
+<img src="content/intro.png" alt="Intro Screen on Tablet Version" width="300">
+<img src="content/dinnerinput.png" alt="Final Title Screen on Tablet Version" width="300">
+<img src="content/flowtomovie.png" alt="Final Title Screen on Tablet Version" width="300">
+<img src="content/movieinput.png" alt="Final Title Screen on Tablet Version" width="300">
+<img src="content/flowtoresults.png" alt="Final Title Screen on Tablet Version" width="300">
+<img src="content/resultsscreen1.png" alt="Final Title Screen on Tablet Version" width="300">
+<img src="content/resultsscreen2.png" alt="Final Title Screen on Tablet Version" width="300">
 
 
 
