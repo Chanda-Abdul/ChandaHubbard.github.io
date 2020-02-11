@@ -7,14 +7,16 @@
 ## Programmer
 Chanda Hubbard
 
-### Technologies Used
+### Technologies Used:
 
 #### HTML <br/>CSS <br/>Javascript <br/>jQuery <br/>Restful APIs <br/>Visual Studio Code <br/>Git Hub
 
 ##### [> Initial wireframes<](https://docs.google.com/document/d/16hyz31opJRNBHMy4-gDB9pLsdS5OK1MZCCaQCb7vhCo/edit?usp=sharing)
 
+##### [> Initial User Stories<](https://docs.google.com/spreadsheets/d/1FB6xBWHgIpJLK6rlRdFN-CHQ4ed_Hvct-nbLKT8k22w/edit?usp=sharing)
 
-### Technologies used: 
+
+
 
 
 <!-- A community driven, book recommendation application. Users can create lists of their favorite books and have others recommended to them.
