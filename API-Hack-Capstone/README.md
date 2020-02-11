@@ -30,7 +30,7 @@ Responsive web app that helps users decide where to order dinner and which movie
 
 ### Wireframe image
 
-<img src="content/20181101_170508.jpg" alt="Wireframe" width="500">
+<img src="content/wireframe.png" alt="Wireframe" width="500">
 
 ## With a little bit of CSS
 
