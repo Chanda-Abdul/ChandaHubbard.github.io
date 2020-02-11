@@ -7,7 +7,15 @@ Chanda Hubbard
 
 [>MVP<](https://chandahubbard.github.io/API%20Hack%20Capstone/index.html)
 
+## Motivation
+
+<!-- We wanted a book recommendation app that was community driven. Books and lists are all created by the users.
+
+## Summary
+
 Responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api) 
+
+//A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user.
 
 
 ### Technologies Used:
@@ -44,31 +52,27 @@ Responsive web app that helps users decide where to order dinner and which movie
 
 ### Mobile
 
-<img src="content/mobile.png" alt="Final Title Screen on Mobile Version" width="320">
+<img src="content/mobile.png" alt="Final Title Screen on Mobile Version" width="250">
 
 ### Tablet
 
-<img src="content/tablet.png" alt="Final Title Screen on Tablet Version" width="320">
+<img src="content/tablet.png" alt="Final Title Screen on Tablet Version" width="300">
 
 ### Desktop/other
 
-<img src="content/desktop.png" alt="Final Title Screen on Desktop Version" width="500">
+<img src="content/desktop.png" alt="Final Title Screen on Desktop Version" width="400">
 
-
-
-<!-- A community driven, book recommendation application. Users can create lists of their favorite books and have others recommended to them.
-A link to your live app
-Screenshot(s) of your app. This makes your app description much easier to understand.
-A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user.
-A section on the technology used. For your capstone, this is fairly simple (HTML/CSS/JavaScript/jQuery) but it's still good to list out the key technologies.
+## Final version & User Flows
 
 
 
 
 
-<!-- ## Motivation
 
-<!-- We wanted a book recommendation app that was community driven. Books and lists are all created by the users.
+
+
+
+<!-- 
 
 <!-- ## Build Status
 
