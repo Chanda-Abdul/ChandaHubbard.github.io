@@ -7,10 +7,7 @@ Chanda Hubbard
 
 [>MVP<](https://chandahubbard.github.io/API%20Hack%20Capstone/index.html)
 
-Responsive web app that helps users decide where to order dinner and watch movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api) 
-
-
-
+Responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users inputs their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api) 
 
 
 ### Technologies Used:
