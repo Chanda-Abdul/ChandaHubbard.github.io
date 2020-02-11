@@ -22,11 +22,11 @@ Responsive web app that helps users decide where to order dinner and which movie
 
 ### Image of MVP Title Screen
 
-<img src="content/MVP-title.png" alt="Image of MVP Title Screen" width="300">
+<img src="content/MVP1.png" alt="Image of MVP Title Screen" width="300">
 
 ### Image of MVP Results Screen
 
-<img src="content/MVP-results-page.png" alt="Image of MVP Results Screen" width="900">
+<img src="content/MVP6.png" alt="Image of MVP Results Screen" width="900">
 
 ### Wireframe image
 
