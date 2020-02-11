@@ -1,11 +1,9 @@
-# Dinner and a Movie API Hack Capstone
+#Thinkful API Hack Capstone - Dinner and a Movie
 
 *Summary
 
+[> Initial wireframes<](https://docs.google.com/document/d/16hyz31opJRNBHMy4-gDB9pLsdS5OK1MZCCaQCb7vhCo/edit?usp=sharing)
 
-##Initial wireframes:
-
-https://docs.google.com/document/d/16hyz31opJRNBHMy4-gDB9pLsdS5OK1MZCCaQCb7vhCo/edit?usp=sharing
 
 
 
@@ -87,24 +85,11 @@ npm run test:server
 * Chai-http
 * Jest
 
-<!-- ## Features
+## Features
 
 <!-- * Create a list of books
 * Add your favorite books
 * Like lists to get recommendations
 * See every book currently in the library
 
-<!-- ## Demo
 
-<!-- - [Live Demo](https://book-thing.herokuapp.com/)
-
-<!-- ## Authors
-
-<!-- * **Sonja Duric** - ** - Database design/Back-End development
-* **Jonathan Fitzgibbon** - ** - Back-End development/testing
-* **Tanner Gill** - ** - Front-End development/testing, styling
-* **Patrice White** - ** - Front-End development/testing, styling
-
-<!-- ## Acknowledgments
-
-<!-- * **Ben Pardo** - ** - The Great Savior, The Wise Sage
