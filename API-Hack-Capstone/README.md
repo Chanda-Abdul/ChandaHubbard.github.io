@@ -92,4 +92,9 @@ npm run test:server
 * Like lists to get recommendations
 * See every book currently in the library
 
-
+##### Technologies used: 
+### HTML5
+### CSS3
+### Javascript
+### jQuery
+### Restful APIs
