@@ -30,28 +30,29 @@ Responsive web app that helps users decide where to order dinner and which movie
 
 ### Wireframe image
 
-<img src="content/wireframe.png" alt="Wireframe" width="300">
+<img src="content/wireframe.png" alt="Wireframe" width="400">
 
 ## With a little bit of CSS
 
 [Color theme: Adobe Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/)
-<img src="content/colortheme.png" alt="Style Title" width="500">
 
-<img src="content/intro.png" alt="Style Title" width="400">
+<br/><img src="content/colortheme.png" alt="Style Title" width="500">
+
+<img src="content/intro.png" alt="Style Title" width="400"><br/>
 
 ## Final version
 
 ### Mobile
 
-<img src="content/mobile.png" alt="Final Title Screen on Mobile Version" width="400">
+<img src="content/mobile.png" alt="Final Title Screen on Mobile Version" width="320">
 
 ### Tablet
 
-<img src="content/tablet.png" alt="Final Title Screen on Tablet Version" width="400">
+<img src="content/tablet.png" alt="Final Title Screen on Tablet Version" width="320">
 
 ### Desktop/other
 
-<img src="content/desktop.png" alt="Final Title Screen on Desktop Version" width="600">
+<img src="content/desktop.png" alt="Final Title Screen on Desktop Version" width="500">
 
 
 
