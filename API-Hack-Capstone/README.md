@@ -9,7 +9,7 @@ Chanda Hubbard
 
 ### Technologies Used
 
-#### HTML <br/>CSS <br/>Javascript <br/>jQuery <br/>Restful APIs <br/>Visual Studio Code <br/>Github
+#### HTML <br/>CSS <br/>Javascript <br/>jQuery <br/>Restful APIs <br/>Visual Studio Code <br/>Git Hub
 
 ##### [> Initial wireframes<](https://docs.google.com/document/d/16hyz31opJRNBHMy4-gDB9pLsdS5OK1MZCCaQCb7vhCo/edit?usp=sharing)
 
