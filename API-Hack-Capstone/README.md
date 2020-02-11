@@ -1,7 +1,11 @@
 # Dinner and a Movie API Hack Capstone
 
+*Summary
 
 
+##Initial wireframes:
+
+https://docs.google.com/document/d/16hyz31opJRNBHMy4-gDB9pLsdS5OK1MZCCaQCb7vhCo/edit?usp=sharing
 
 
 
@@ -12,9 +16,7 @@ A summary section. This should have a concise explanation of what your app does.
 A section on the technology used. For your capstone, this is fairly simple (HTML/CSS/JavaScript/jQuery) but it's still good to list out the key technologies.
 
 
-##Initial wireframes:
 
-https://docs.google.com/document/d/16hyz31opJRNBHMy4-gDB9pLsdS5OK1MZCCaQCb7vhCo/edit?usp=sharing
 
 
 <!-- ## Motivation
