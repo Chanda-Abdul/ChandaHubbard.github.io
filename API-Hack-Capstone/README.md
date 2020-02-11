@@ -9,7 +9,7 @@ Chanda Hubbard
 
 ## Motivation
 
-<!-- We wanted a book recommendation app that was community driven. Books and lists are all created by the users.
+<!-- We wanted a book recommendation app that was community driven. Books and lists are all created by the users. --!>
 
 ## Summary
 
