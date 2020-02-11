@@ -1,6 +1,5 @@
 "use strict";
 
-$(document).ready(function() {
   const dinnerApiKey = "c78d6bb5335bd92c";
   const dinnerSearchURL =
     "https://cors-anywhere.herokuapp.com/https://eatstreet.com/publicapi/v1/restaurant/search";
@@ -227,4 +226,4 @@ $(document).ready(function() {
   }
 
   $(startApp);
-});
+
