@@ -2,15 +2,26 @@
 
 *Summary
 
+[Live URL](https://chandahubbard.github.io/API-Hack-Capstone/index.html)
+
+## Programmer
+Chanda Hubbard
+
+### Technologies Used
+
+#### HTML
+#### CSS
+#### Javascript
+#### jQuery
+#### Restful APIs
+#### Visual Studio Code
+#### Github
+
 [> Initial wireframes<](https://docs.google.com/document/d/16hyz31opJRNBHMy4-gDB9pLsdS5OK1MZCCaQCb7vhCo/edit?usp=sharing)
 
 
 ### Technologies used: 
-#### HTML5
-#### CSS3
-#### Javascript
-#### jQuery
-#### Restful APIs
+
 
 <!-- A community driven, book recommendation application. Users can create lists of their favorite books and have others recommended to them.
 A link to your live app
