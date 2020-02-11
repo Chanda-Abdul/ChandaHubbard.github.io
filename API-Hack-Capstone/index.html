@@ -4,45 +4,36 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Dinner and a Movie</title>
-	<meta name="description" type="Dinner and a Movie API Hack">
+	<meta name="description" content="Dinner and a Movie API Hack">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="#">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Playfair+Display:400,800|Source+Sans+Pro&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Playfair+Display:400,800|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 
 <body>
-    <header>
-		<a href="index.html">
-            <img class="dinnerMovie" src="images/DinnerMovie.jpg" alt="dinner movie banner" />
-</a>
-    </header>
+  <header>
+    <a href="index.html"><img class="dinnerMovie" src="images/DinnerMovie.jpg" alt="dinner movie banner" /></a>
+  </header>
     
-
 	<main>
-   
-
     <section class="outerBox">
-
       <section class="introBox box altBox">
        <br/><br/><h2>
         Are you ready for a fun night in?</h2><br/><br/>
     <button type="button" id="startAppButton">Let's Go!</button><br/><br/>
     <img class="popcorn image" src="images/popcorn.png" alt="popcorn" width="300"/>
-      </section>
-
-      <section class="dinnerBox box altBox">
-        
-
-        <h4>The perfect night in starts with ordering from a restuaurant near you</h4><br>
-        <p>Just enter your address and we will find a few local restaurants that will be perfect for you. <br><br>
+    </section>
+    
+    <section class="dinnerBox box altBox">
+      <h4>The perfect night in starts with ordering from a restuaurant near you</h4><br>
+        <p>Just enter your address and we will find a few local restaurants that will be perfect for you.</main><p><br><br>
         <form id="js-dinner-form">
           <label for="search-term-dinner" id="search-term-dinner"> What is your address?</label>
           <br/>
           <br/><input type="text" name="dinner-search-term" id="js-search-term-dinner" placeholder="ex. San Francisco, CA" required><br/><br/>
-          Then, select whether you want to pickup your food or have it delivered. OR select both and you can decide later</p><br>
+          <p>Then, select whether you want to pickup your food or have it delivered. OR select both and you can decide later</p><br>
           <input type="radio" name="deliveryOrPickup" value="delivery" id="js-delivery-or-pickup">    Delivery<br><br>
           <input type="radio" name="deliveryOrPickup" value="pickup" id="js-delivery-or-pickup">  Pickup<br><br><input type="radio" name="deliveryOrPickup" value="both" id="js-delivery-or-pickup">  Both<br><br><br>
           <input type="submit" value="Find a Restuaurant!" id="findRestaurant">
@@ -51,33 +42,30 @@
       <section id="dinnerResults">
         <ul id="dinner-results-list">
         </ul>
-    
         </section>
        </section>
       
 
-    <section class="movieBox box altBox">
-		
+    <section class="movieBox box altBox">	
     <form id="js-movie-form">
       <label for="search-term-movie">What movie do you like and want to see similar recommendations for?</label><br/><br/>
       <input type="text" name="search-term" id="js-search-term-movie" placeholder="ex. Harry Potter" required /><br/><br/><br/>
-      <button type="button" id="findMovieButton">Find a Movie!</button>
+      <button type="button" id="findMovieButton">Find a Movie!</button></form><br/><br/>
       </form>
       <img class="film image" src="images/filmstrip.png" alt="filmstrip" width="300"/>
-        <section id="movieResults" class="hidden">
-          
+        <section id="movieResults" class="hidden"> 
           <ul id="movie-results-list">
           </ul>
         </section>
         </section>
         <section class="resultsBox box altBox">
             <h3>Let's start the show!!!</h3><br/><br/>
-            <p>The perfect night in starts with ordering in from</p><br/><br/>
+            <p>The perfect night in starts with ordering in from...</p><br/><br/>
             <section id="dinnerResults" class="hidden">
                 <ul id="dinner-results-list-final">
                 </ul>
             </section>
-            <p>and watching one of these great movies...</p><br/><br/>
+            <p>and watching this great movie...</p><br/><br/>
             <section id="movieResults" class="hidden">
                 <ul id="movie-results-list-final">
                 </ul>
@@ -94,11 +82,9 @@
                 </section>
                 </section>
                 <p id="js-error-message" class="error-message"></p>
+                </main>
                 
-              <footer>
-                <!-- <img class="theaterCurtains" src="images/theaterSeats.jpeg" alt="dinner movie banner" height="300"/>
-                <img class="theaterCurtains" src="images/theaterSeats.jpeg" alt="dinner movie banner" height="300"/>
-              </footer></main> -->
+             
                 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="index.js"></script>

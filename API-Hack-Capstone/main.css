@@ -2,19 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border-radius: 1%; */
-  /* background-color: black; */
-  }
-  
-  body {
-  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
   color: #371d0d;
-  /* background-image: linear-gradient(to bottom, #DB1F2D, black); */
-  /* background-color: #DB1F2D; */
 }
 
 main {
-  border: 2em #DB1F2D solid;
+  border: 2em #db1f2d solid;
   border-radius: 0%;
 }
 
@@ -24,10 +20,9 @@ header {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #DB1F2D;
-  border: .25em #DB1F2D solid;
+  background-color: #db1f2d;
+  border: 0.25em #db1f2d solid;
   border-radius: 0%;
-  
 }
 
 .outerBox {
@@ -35,13 +30,12 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 2em;
+  margin-right: 2em;
   margin-bottom: 2em;
-  background-color: #0F3D59;
+  background-color: #0f3d59;
   border: 0.1em #371d0d solid;
   border-radius: 2%;
-  /* background: url(images/filmstrip.png); */
 }
 
 .altBox {
@@ -53,10 +47,9 @@ header {
   margin: auto;
   padding: 2em;
   border: 0.1em #371d0d solid;
-  background-color: #F2F2F2;
-  color: #0F3D59;
+  background-color: #f2f2f2;
+  color: #0f3d59;
   border-radius: 2%;
-
 }
 
 .dinnerMovie {
@@ -69,8 +62,10 @@ header {
   width: 1.5 em;
 }
 
-h2, h3, h4  {
-  font-family: 'Playfair Display', serif;
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
   font-size: 1.5em;
   font-weight: bold;
   line-height: 1.5;
@@ -84,18 +79,18 @@ button {
   cursor: pointer;
   text-transform: uppercase;
   border: 0.1em #371d0d solid;
-  background-color: #F2811D;
+  background-color: #f2811d;
   color: #371d0d;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1em;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 3%;
 }
 
 button:hover,
 button:active {
-  background-color: #F22929;
-  color: #F2F2F2;
+  background-color: #f22929;
+  color: #f2f2f2;
   border: 0.1em #371d0d solid;
 }
 
@@ -103,86 +98,117 @@ input {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  border: 0.1em #BF212E solid;
+  border: 0.1em #bf212e solid;
   background-color: white;
   color: #371d0d;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1em;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 3%;
 }
 
-footer {
-  display: inline-flex;
-  background-image: url(images/theaterSeats.jpeg);
-}
-
-
-@media only screen and (min-width: 550px) {
-
-  .box {
-    width: 26em;
-    padding: 1em;
+@media only screen and (min-width: 320px) {
+  .dinnerMovie {
+    width: 15em;
   }
+
   .outerBox {
-    width: 30em;
-    padding: 3em;
+    border-radius: 0%;
+    padding: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  .altBox {
+    width: 14em;
+    border-radius: 0%;
   }
 
   .button {
-    margin-top: 1em;
-    font-size: 1em;
-    width: 10em;
-    height: 2.5em;
-  }
-
-  h1,
-  h3,
-  legend {
-    font-size: 1em;
+    margin-top: 0.25em;
+    font-size: 0.75em;
   }
 
   .sizeMe {
     font-size: 0.9em;
   }
+
+  .image,
+  .video {
+    width: 12em;
+  }
 }
 
-@media only screen and (min-width: 800px) {  
-  
-  .header li {
-    margin: 1em;
-    font-size: 1.3em;
-  }
-
-  .video {
-    width: 560;
-    height: 315;
-    
+@media only screen and (min-width: 760px) {
+  .dinnerMovie {
+    width: 25em;
   }
 
   .outerBox {
-    width: 35em;
+    border-radius: 2%;
+    padding: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
   }
 
-  .box {
-    width: 85%;
-    height: 95%;
-  }
-
-  h1,
-  h3,
-  legend {
-    font-size: 1.3em;
-  }
-
-  .sizeMe {
-    font-size: 1em;
+  .altBox {
+    border-radius: 2%;
+    width: 20em;
   }
 
   .button {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 12em;
-    font-size: 1.2em;
+    margin-top: 0.25em;
+    font-size: 0.75em;
+  }
+
+  .sizeMe {
+    font-size: 0.9em;
+  }
+
+  .image,
+  .video {
+    width: 17em;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .dinnerMovie {
+    width: 40em;
+  }
+
+  .outerBox {
+    border-radius: 2%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .altBox {
+    border-radius: 2%;
+    width: 60em;
+  }
+
+  .button {
+    margin-top: 0.25em;
+    font-size: 0.75em;
+  }
+
+  .sizeMe {
+    font-size: 0.9em;
+  }
+
+  .image,
+  .video {
+    width: 25em;
+  }
+
+  .video {
+    height: 30em;
+    width: 45em;
   }
 }

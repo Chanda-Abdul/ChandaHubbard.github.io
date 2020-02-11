@@ -126,7 +126,6 @@ $(document).ready(function() {
     const queryString = formatQueryParams(params);
     const movieURL = movieSearchURL + "?" + queryString;
 
-    //console.log(movieURL);
 
     fetch(movieURL)
       .then(response => {
@@ -154,7 +153,7 @@ $(document).ready(function() {
     $("form").hide("slow");
     $(".film").hide("slow");
     $("#movie-results-list").append(
-      `<h1>Now let's find the perfect dinner and movie for you tonight!</h1><br/><br/><button type="button" id="goToResultsButton">View my Dinner & Movie Pairing</button><br/><br/>`
+      `<h1>Now let's find the perfect dinner and movie for you to watch tonight!</h1><br/><br/><button type="button" id="goToResultsButton">View my Dinner & Movie Pairing</button><br/><br/>`
     );
     for (let i = 0; i < responseJsonResultsMovie.Similar.Results.length; i++) {}
     $("#goToResultsButton").on("click", function(event) {
@@ -174,7 +173,7 @@ $(document).ready(function() {
 
     $("#dinner-results-list-final").append(
       `<li><h3><a href="${responseJsonResultsDinner.restaurants[currentDinnerIndex].url}" target="_blank">${responseJsonResultsDinner.restaurants[currentDinnerIndex].name}</a></h3><br/>
-        <p><img src="${responseJsonResultsDinner.restaurants[currentDinnerIndex].logoUrl}" alt="restaurant logo" class="images" width="280"></p><br/>
+        <p><img src="${responseJsonResultsDinner.restaurants[currentDinnerIndex].logoUrl}" alt="restaurant logo" class="image"></p><br/>
        <p>${responseJsonResultsDinner.restaurants[currentDinnerIndex].streetAddress}<br/>
        ${responseJsonResultsDinner.restaurants[currentDinnerIndex].city}, ${responseJsonResultsDinner.restaurants[currentDinnerIndex].state}, ${responseJsonResultsDinner.restaurants[currentDinnerIndex].zip}<br/>
        ${responseJsonResultsDinner.restaurants[currentDinnerIndex].phone}<br/><br/>
@@ -205,7 +204,7 @@ $(document).ready(function() {
     $("#movie-results-list-final").empty();
     $("#dinner-results-list-final").append(
       `<li><h3><a href="${responseJsonResultsDinner.restaurants[currentDinnerIndex].url}" target="_blank">${responseJsonResultsDinner.restaurants[currentDinnerIndex].name}</a></h3><br/>
-          <p><img src="${responseJsonResultsDinner.restaurants[currentDinnerIndex].logoUrl}" alt="restaurant logo" class="images" width="280"></p><br/>
+          <p><img src="${responseJsonResultsDinner.restaurants[currentDinnerIndex].logoUrl}" alt="restaurant logo" class="image" width="280"></p><br/>
          <p>${responseJsonResultsDinner.restaurants[currentDinnerIndex].streetAddress}<br/>
          ${responseJsonResultsDinner.restaurants[currentDinnerIndex].city}, ${responseJsonResultsDinner.restaurants[currentDinnerIndex].state}, ${responseJsonResultsDinner.restaurants[currentDinnerIndex].zip}<br/>
          ${responseJsonResultsDinner.restaurants[currentDinnerIndex].phone}<br/><br/>
