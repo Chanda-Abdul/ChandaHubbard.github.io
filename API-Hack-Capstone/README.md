@@ -9,8 +9,9 @@ Chanda Hubbard
 
 ### Technologies Used
 
-#### HTML
-#### CSS
+#### 
+HTML
+CSS
 #### Javascript
 #### jQuery
 #### Restful APIs
