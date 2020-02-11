@@ -35,9 +35,9 @@ Responsive web app that helps users decide where to order dinner and which movie
 ## With a little bit of CSS
 
 [Color theme: Adobe Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/)
-<img src="content/Style-title.png" alt="Style Title" width="750">
+<img src="content/colortheme.png" alt="Style Title" width="750">
 
-<img src="content/Style-title.png" alt="Style Title" width="750">
+<img src="content/intro.png" alt="Style Title" width="750">
 
 ## Final version
 
