@@ -5,24 +5,24 @@
 ## Programmer
 Chanda Hubbard
 
-[>Live URL<](https://chandahubbard.github.io/API-Hack-Capstone/)
+[>Live URL<](https://chandahubbard.github.io/quizapp/)
 
 
 
 ## Motivation
 
-Sometimes you just want a nice relaxing night in, while ordering dinner and watching a good movie.  There are so many restaurants and movies to choose from, and it can be very hard to make a selection.  This app was created to help users avoid the decision paralysis that happens when they need to deicde on a resturaunt to eat at, or when they need to decide on a movie to watch. First, the user will input their location and the app will show the information for a takeout restaurant nearby.  Then the user will input a movie that they like and the app will show them a recommendation and trailer for a similar movie.
+//
 
 
 ## Summary
 
-<b>Dinner and a Movie</b> is a responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api) 
+//
 
 
 
 ## Built with:
 
-#### HTML <br/>CSS <br/>Javascript <br/>jQuery <br/>Restful APIs <br/>Visual Studio Code <br/>Git Hub
+#### HTML <br/>CSS <br/>Javascript <br/>jQuery<br/>Visual Studio Code <br/>Git Hub
 
 
 
