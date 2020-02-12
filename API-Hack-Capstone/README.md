@@ -9,16 +9,13 @@ Chanda Hubbard
 
 ## Motivation
 
-Sometimes you just want a nice relaxing night in, while ordering dinner and watching a good movie.  There are so many restaurants and movies to choose from, and it can be very hard to make a selection.  This app was created to help users avoid the decision paralysis that happens when they need to deicde on a resturaunt to eat at, or when they need to decide on a movie to watch. The users will input thier location and the app will show the information for a takeout restaurant nearby.  Then the user will input a movie that they like and the app will show them a recommendation and trailer for a similar movie.
+Sometimes you just want a nice relaxing night in, while ordering dinner and watching a good movie.  There are so many restaurants and movies to choose from, and it can be very hard to make a selection.  This app was created to help users avoid the decision paralysis that happens when they need to deicde on a resturaunt to eat at, or when they need to decide on a movie to watch. First, the user will input their location and the app will show the information for a takeout restaurant nearby.  Then the user will input a movie that they like and the app will show them a recommendation and trailer for a similar movie.
 
 ## Summary
 
-Responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api) 
+<bold>Dinner and a Movie</bold> is a responsive web app that helps users decide where to order dinner and which movie to watch for a fun night in.  Users input their location and it is sent to the [EatStreet API Endpoint](https://developers.eatstreet.com/endpoint/search) to find restaurants that provide food delivery or pickup nearby. Users will then navigate to a screen where they can input a movie that they like so that they can receive similar movie recommendations using the [TasteDive Movie API Endpoint](https://tastedive.com/read/api) 
 
-//A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user.
-
-
-### Technologies Used:
+## Built with:
 
 #### HTML <br/>CSS <br/>Javascript <br/>jQuery <br/>Restful APIs <br/>Visual Studio Code <br/>Git Hub
 
@@ -42,7 +39,7 @@ Responsive web app that helps users decide where to order dinner and which movie
 
 #### With a little bit of CSS
 
-After researching the Psychology of Color, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or Orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color scheme called,  [Color theme: Adobe Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which you can view below.
+After researching the <i>Psychology of Color</i>, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or Orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color scheme called,  [Color theme: Adobe Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which you can view below.
 
 <br/><img src="content/colortheme.png" alt="Style Title" width="500">
 
