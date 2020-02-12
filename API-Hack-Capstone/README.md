@@ -61,7 +61,9 @@ After researching the <i>Psychology of Color</i>, I decide that I would either c
 
 ## Final version & User Flows
 
-### (Screen 1) <i>Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked </i>
+<center>
+
+### Screen 1 ## Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked 
 <img src="content/intro.png" alt="Intro Screen on Tablet Version" width="500" align="center">
 
 ### (Screen 2) Dinner Input screen, where the user can provide their location and select delivery and pickup options
