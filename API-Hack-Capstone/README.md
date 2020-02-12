@@ -63,20 +63,33 @@ After researching the <i>Psychology of Color</i>, I decide that I would either c
 
 <center>
 
-### Screen 1 ## Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked 
+### Screen 1 
+#### Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked 
 <img src="content/intro.png" alt="Intro Screen on Tablet Version" width="500" align="center">
 
-### (Screen 2) Dinner Input screen, where the user can provide their location and select delivery and pickup options
+### Screen 2
+#### Dinner Input screen, where the user can provide their location and select delivery and pickup options
 <img src="content/dinnerinput.png" alt="Dinner Input Screen on Tablet Version" width="500">
 
-### (Screen 3) Flows the user from the dinner input screen to the movie input screen once the "Find a Movie" button is clicked
+### Screen 3
+#### Flows the user from the dinner input screen to the movie input screen once the "Find a Movie" button is clicked
 <img src="content/flowtomovie.png" alt="Flow from Dinner input to Movie input Screen on Tablet Version" width="500">
 
-###  (Screen 4) Movie input screen that allows used to provide a movie they would like to see similar recommendations for
+### Screen 4
+#### Movie input screen that allows used to provide a movie they would like to see similar recommendations for
 <img src="content/movieinput.png" alt="Movie Input Screen on Tablet Version" width="500">
+
+### Screen 5
+#### Flows the user from the movie input screen to the results screen once the "View Dinner & Movie Pairing" button is clicked
 <img src="content/flowtoresults.png" alt="Flow from movie input to results Screen on Tablet Version" width="500">
+
+### Screen 6
+#### Flows the user to the results screen where they can view thier restaurant recommendation and their movie recommendation.
 <img src="content/resultsscreen1.png" alt="Final Screen top Screen on Tablet Version" width="500">
 <img src="content/resultsscreen2.png" alt="Final Screen Bottom on Tablet Version" width="500">
+
+### Additional Screens
+#### The user can then select the "restart the app" button which navigates back to screen one and clears all results or they can select the "View more recommendations" button to view screen 6 with different movie and restaurant results.
 
 
 ## Other features to implement in future versions
