@@ -1,4 +1,4 @@
-# Thinkful API Hack Capstone - Dinner and a Movie
+# Thinkful API Hack Capstone - Dinner and a Movie Web App
 
 ## Programmer
 Chanda Hubbard
