@@ -1,4 +1,4 @@
-# Thinkful Quiz App Project - Fashion Designer Quiz Web App
+# Fashion Designer Quiz Web App
 
 
 
