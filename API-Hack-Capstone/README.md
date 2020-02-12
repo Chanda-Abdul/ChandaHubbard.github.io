@@ -44,7 +44,7 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 <img src="content/MVP1.png" alt="Image of MVP Title Screen" width="300">
 
-###3 Image of MVP Results Screen
+#### Image of MVP Results Screen
 
 <img src="content/MVP6.png" alt="Image of MVP Results Screen" width="900">
 
