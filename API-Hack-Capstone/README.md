@@ -39,7 +39,7 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 ### With a little bit of CSS
 
-After researching the <i>Psychology of Color</i>, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color theme from Adobe called,  [Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which you can view below.
+After researching the <i>Psychology of Color</i>, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color theme from Adobe called,  [Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which can be viewed below.
 
 <br/><img src="content/colortheme.png" alt="Style Title" width="500">
 
@@ -61,14 +61,16 @@ After researching the <i>Psychology of Color</i>, I decide that I would either c
 
 ## Final version & User Flows
 
-### Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked
-<img src="content/intro.png" alt="Intro Screen on Tablet Version" width="500">
+#### Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked
+<img src="content/intro.png" alt="Intro Screen on Tablet Version" width="500" align="center">
 
-### Dinner Input screen, where the user can provide their location and select delivery and pickup options
+#### Dinner Input screen, where the user can provide their location and select delivery and pickup options
 <img src="content/dinnerinput.png" alt="Dinner Input Screen on Tablet Version" width="500">
 
-### Screen that flows the user from the dinner input screen to the movie input screen once the button is clicked
+#### Screen that flows the user from the dinner input screen to the movie input screen once the "Find a Movie" button is clicked
 <img src="content/flowtomovie.png" alt="Flow from Dinner input to Movie input Screen on Tablet Version" width="500">
+
+#### Movie input screen that allows used to provide a movie they would like to see similar recommendations for
 <img src="content/movieinput.png" alt="Movie Input Screen on Tablet Version" width="500">
 <img src="content/flowtoresults.png" alt="Flow from movie input to results Screen on Tablet Version" width="500">
 <img src="content/resultsscreen1.png" alt="Final Screen top Screen on Tablet Version" width="500">
@@ -78,5 +80,6 @@ After researching the <i>Psychology of Color</i>, I decide that I would either c
 ## Other features to implement in future versions
 
 [ ] Figure out how to handle edge cases for movie input
+<br/>
 [ ] Incorporate an additional API that will let the user know which streaming service currently offers their movie selection for viewing.
 
