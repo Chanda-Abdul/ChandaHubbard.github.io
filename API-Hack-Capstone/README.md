@@ -39,13 +39,13 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 ### With a little bit of CSS
 
-After researching the <i>Psychology of Color</i>, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color scheme called,  [Color theme: Adobe Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which you can view below.
+After researching the <i>Psychology of Color</i>, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color theme from Adobe called,  [Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which you can view below.
 
 <br/><img src="content/colortheme.png" alt="Style Title" width="500">
 
 <img src="content/intro.png" alt="Style Title" width="400"><br/>
 
-## Final version
+## Final version at different breakpoints
 
 ### Mobile
 
@@ -61,6 +61,7 @@ After researching the <i>Psychology of Color</i>, I decide that I would either c
 
 # Final version & User Flows
 
+## Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked
 <img src="content/intro.png" alt="Intro Screen on Tablet Version" width="500">
 <img src="content/dinnerinput.png" alt="Dinner Input Screen on Tablet Version" width="500">
 <img src="content/flowtomovie.png" alt="Flow from Dinner input to Movie input Screen on Tablet Version" width="500">
@@ -70,81 +71,8 @@ After researching the <i>Psychology of Color</i>, I decide that I would either c
 <img src="content/resultsscreen2.png" alt="Final Screen Bottom on Tablet Version" width="500">
 
 
+## Other features to implement in future versions
 
-
-
-
-
-<!-- 
-
-<!-- ## Build Status
-
-<!-- ![Build Status](https://travis-ci.org/thinkful-c11/book-thing.io.svg?branch=master)
-
-<!-- ## Screenshots
-Login Screen/Landing Page:
-
-<!-- ![login screen](screenshots/login.png)
-
-<!-- About:
-
-<!-- ![about](screenshots/about.png)
-
-<!-- Library:
-
-<!-- ![library](screenshots/library.png)
-
-<!-- Recommendations:
-
-<!-- ![recommendations](screenshots/recommendations.png)
-
-<!-- ## Environment Setup
-
-<!-- 1. Setup your own postgress server
-2. Run the database_script.sql file to build your table structure
-3. Create a .env file in your server folder which contains the path to your database as well as your client id and secret
-4. Obtain a client id and secret by setting up your app with [the google developers console](https://console.developers.google.com/)
-5. Run your project with
-```
-npm run dev
-```
-
-<!-- ## Running the tests
-
-<!-- To run all tests, run
-```
-<!-- npm test
-```
-To run just the front/back end tests, run
-```
-npm run test:server
-
-<!-- npm run test:client
-```
-
-<!-- ## Built With
-
-<!-- ### Front-End
-* React
-* Redux
-* React-Router
-
-<!-- ### Back-End
-* Postgress
-* Express
-* Node
-* Knex
-
-<!-- ### Testing
-* Mocha
-* Chai
-* Chai-http
-* Jest
-
-## Features
-
-<!-- * Create a list of books
-* Add your favorite books
-* Like lists to get recommendations
-* See every book currently in the library
+[ ] Figure out how to handle edge cases for movie input
+[ ] Incorporate an additional API that will let the user know which streaming service currently offers their movie selection for viewing.
 
