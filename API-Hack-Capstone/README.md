@@ -41,7 +41,7 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 After researching the <i>Psychology of Color</i>, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color theme from Adobe called,  [Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which can be viewed below.
 
-<br/><img src="content/colortheme.png" alt="Style Title" width="500">
+<br/><img src="content/colortheme.png" alt="Style Title" width="600">
 
 <img src="content/intro.png" alt="Style Title" width="400"><br/>
 
@@ -84,7 +84,7 @@ After researching the <i>Psychology of Color</i>, I decide that I would either c
 <img src="content/flowtoresults.png" alt="Flow from movie input to results Screen on Tablet Version" width="500">
 
 ### Screen 6
-#### Flows the user to the results screen where they can view thier restaurant recommendation and their movie recommendation.
+#### Flows the user to the results screen where they can view their restaurant recommendation and their movie recommendation.
 <img src="content/resultsscreen1.png" alt="Final Screen top Screen on Tablet Version" width="500">
 <img src="content/resultsscreen2.png" alt="Final Screen Bottom on Tablet Version" width="500">
 
