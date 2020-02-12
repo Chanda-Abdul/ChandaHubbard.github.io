@@ -61,16 +61,16 @@ After researching the <i>Psychology of Color</i>, I decide that I would either c
 
 ## Final version & User Flows
 
-#### Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked
+### (Screen 1) <i>Landing Page which Navigates to a Dinner Input screen once the "Let's Go" button is clicked </i>
 <img src="content/intro.png" alt="Intro Screen on Tablet Version" width="500" align="center">
 
-#### Dinner Input screen, where the user can provide their location and select delivery and pickup options
+### (Screen 2) Dinner Input screen, where the user can provide their location and select delivery and pickup options
 <img src="content/dinnerinput.png" alt="Dinner Input Screen on Tablet Version" width="500">
 
-#### Screen that flows the user from the dinner input screen to the movie input screen once the "Find a Movie" button is clicked
+### (Screen 3) Flows the user from the dinner input screen to the movie input screen once the "Find a Movie" button is clicked
 <img src="content/flowtomovie.png" alt="Flow from Dinner input to Movie input Screen on Tablet Version" width="500">
 
-#### Movie input screen that allows used to provide a movie they would like to see similar recommendations for
+###  (Screen 4) Movie input screen that allows used to provide a movie they would like to see similar recommendations for
 <img src="content/movieinput.png" alt="Movie Input Screen on Tablet Version" width="500">
 <img src="content/flowtoresults.png" alt="Flow from movie input to results Screen on Tablet Version" width="500">
 <img src="content/resultsscreen1.png" alt="Final Screen top Screen on Tablet Version" width="500">
