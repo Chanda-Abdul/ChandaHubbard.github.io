@@ -23,23 +23,23 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 ##### [> Initial User Stories<](https://docs.google.com/spreadsheets/d/1FB6xBWHgIpJLK6rlRdFN-CHQ4ed_Hvct-nbLKT8k22w/edit?usp=sharing)
 
-### Version MVP (Minimal Viable Product)
+## Version MVP (Minimal Viable Product)
 
-#### Image of MVP Title Screen
+### Image of MVP Title Screen
 
 <img src="content/MVP1.png" alt="Image of MVP Title Screen" width="300">
 
-#### Image of MVP Results Screen
+### Image of MVP Results Screen
 
 <img src="content/MVP6.png" alt="Image of MVP Results Screen" width="900">
 
-#### Wireframe images
+### Wireframe images
 
 <img src="content/wireframe.png" alt="Wireframe" width="400">
 
-#### With a little bit of CSS
+### With a little bit of CSS
 
-After researching the <i>Psychology of Color</i>, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or Orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color scheme called,  [Color theme: Adobe Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which you can view below.
+After researching the <i>Psychology of Color</i>, I decide that I would either choose a red or orange color scheme for my styling.  Red, because it symbolizes entertainment, for the movie portion of the app. Or orange, because it symbolizes food/hunger, for the food delivery portion of the app.  I ended up with a red based color scheme called,  [Color theme: Adobe Sosialisasi Speak Up 19](https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/https://color.adobe.com/Sosialisasi-Speak-Up-19-color-theme-14114879/) , which you can view below.
 
 <br/><img src="content/colortheme.png" alt="Style Title" width="500">
 
