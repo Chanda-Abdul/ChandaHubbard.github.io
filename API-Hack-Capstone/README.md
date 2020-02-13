@@ -22,7 +22,7 @@ Sometimes you just want a nice relaxing night in, while ordering dinner and watc
 
 ## Built with:
 
-#### HTML <br/>CSS <br/>Javascript <br/>jQuery <br/>Restful APIs <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [EatStreet API](https://developers.eatstreet.com/endpoint/search)  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [TasteDive Movie API ](https://tastedive.com/read/api)<br/>Visual Studio Code <br/>Git Hub
+#### <br/>Restful APIs <br/>&nbsp;&nbsp;&nbsp; [EatStreet API](https://developers.eatstreet.com/endpoint/search)  <br/>&nbsp;&nbsp;&nbsp; [TasteDive Movie API ](https://tastedive.com/read/api)<br/>jQuery <br/>Javascript <br/>HTML <br/>CSS   Visual Studio Code <br/>Git Hub
 
 
 
