@@ -5,7 +5,7 @@
 ## Programmer
 Chanda Hubbard
 
-[>Live URL<](https://chandahubbard.github.io/portfolio/)
+[>Live URL<](https://chandahubbard.github.io/Portfolio/)
 
 
 
