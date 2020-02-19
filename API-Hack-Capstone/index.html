@@ -31,6 +31,7 @@
       <h4>The perfect night in starts with ordering from a restuaurant near you</h4><br>
         <p>Just enter your address and we will find a few local restaurants that will be perfect for you.<p><br><br>
         <form id="js-dinner-form">
+          <fieldset name="dinner-search">
           <label for="search-term-dinner" id="search-term-dinner"> What is your address?</label>
           <br/>
           <br/><input type="text" name="dinner-search-term" id="js-search-term-dinner" placeholder="ex. San Francisco, CA" required><br/><br/>
@@ -38,22 +39,25 @@
           <input type="radio" name="deliveryOrPickup" value="delivery" id="js-delivery-or-pickup">    Delivery<br><br>
           <input type="radio" name="deliveryOrPickup" value="pickup" id="js-delivery-or-pickup">  Pickup<br><br><input type="radio" name="deliveryOrPickup" value="both" id="js-delivery-or-pickup">  Both<br><br><br>
           <input type="submit" value="Find a Restuaurant!" id="findRestaurant">
-      </form><br/><br/>
+      </form>
+    </fieldset><br/><br/>
       <img class="takeout image" src="images/takeout.png" alt="takeout" width="300"/>
       <section id="dinnerResults">
         <ul id="dinner-results-list">
         </ul>
         </section>
-       </section>
+      </section>
     
       
 
     <section class="movieBox box altBox">	
     <form id="js-movie-form">
+      <fieldset name="move-search">
       <label for="search-term-movie">What movie do you like and want to see similar recommendations for?</label><br/><br/>
       <input type="text" name="search-term" id="js-search-term-movie" placeholder="ex. Harry Potter" required /><br/><br/><br/>
       <button type="button" id="findMovieButton">Find a Movie!</button></form><br/><br/>
       </form>
+    </fieldset>
       <img class="film image" src="images/filmstrip.png" alt="filmstrip" width="300"/>
         <section id="movieResults" class="hidden"> 
           <ul id="movie-results-list">
